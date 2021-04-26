@@ -6,7 +6,7 @@ import json
 
 app = Flask(__name__)
 
-ip_add='14.140.42.210' # pune city ip address
+pune_ip='14.140.42.210' # pune city ip address
 
 @app.route('/pucsd')
 def myapi():
@@ -16,7 +16,8 @@ def myapi():
     now = datetime.now()
         
     # Sending an API request
-    response = urllib.request.urlopen("http://ipwhois.app/json/"+ip_add)
+    # response = urllib.request.urlopen("http://ipwhois.app/json/"+ip)
+    response = urllib.request.urlopen("http://ipwhois.app/json/"+pune_ip)
     ipgeolocation = json.load(response)
 
     data=[{
