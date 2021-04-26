@@ -1,7 +1,7 @@
 ## How to run 
 
-- eval $(minikube docker-env)
 - minikube start or minikube start --driver=docker
+- eval $(minikube docker-env)
 - docker build . -t test
 - kubectl apply -f .
 - kubectl get svc
