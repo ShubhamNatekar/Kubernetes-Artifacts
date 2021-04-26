@@ -6,4 +6,4 @@
 - kubectl apply -f .
 - kubectl get svc
 - minikube ip
-- hit the URL  "http://<Minikube_IP>:<NODEPORT>/pucsd" in any browser.
+- hit the URL  "http://< minikube ip >:<NODEPORT>/pucsd" in any browser.
